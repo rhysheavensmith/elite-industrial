@@ -811,6 +811,11 @@ section {
 	.cta {
 		background: black;
 	}
+	.cta .cta-btn:hover {
+		background: none;
+		border-color: white;
+		color: #2ea9e1;
+	}
 }
 /*--------------------------------------------------------------
 # Portfolio
