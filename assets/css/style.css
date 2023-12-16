@@ -809,9 +809,7 @@ section {
 
 @media screen and (max-width: 768px) {
 	.cta {
-		background-size: contain; /* Adjusts the scaling of the background */
-		background-attachment: scroll; /* Prevents fixed background zooming on mobile */
-		background-repeat: no-repeat; /* Prevents the image from repeating */
+		background: black;
 	}
 }
 /*--------------------------------------------------------------
