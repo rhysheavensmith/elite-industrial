@@ -771,9 +771,9 @@ section {
 --------------------------------------------------------------*/
 .cta {
 	background: linear-gradient(rgba(2, 2, 2, 0.5), rgba(0, 0, 0, 0.5)),
-		url('../img/welder-hero.jpg') fixed center center;
+		url('../img/welder-hero.jpg') center center;
 	background-size: cover;
-	background-position: center;
+	background-attachment: fixed; /* This can cause zooming on some mobile browsers */
 	padding: 60px 0;
 }
 
@@ -807,6 +807,13 @@ section {
 	color: white;
 }
 
+@media screen and (max-width: 768px) {
+	.cta {
+		background-size: contain; /* Adjusts the scaling of the background */
+		background-attachment: scroll; /* Prevents fixed background zooming on mobile */
+		background-repeat: no-repeat; /* Prevents the image from repeating */
+	}
+}
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
