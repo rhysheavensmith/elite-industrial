@@ -1632,3 +1632,12 @@ section {
 	font-size: 13px;
 	color: #fff;
 }
+
+.email-submit {
+	color: white;
+	background-color: #2ea9e1;
+	border: none;
+	padding: 10px 25px;
+	border-radius: 7px;
+	margin-top: 15px;
+}
